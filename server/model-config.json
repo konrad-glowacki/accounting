@@ -29,18 +29,14 @@
     "dataSource": "db",
     "public": false
   },
-  "Accountant": {
+
+  "accountant": {
     "dataSource": "db",
-    "public": true,
-    "options": {
-      "emailVerificationRequired": true
-    }
+    "public": true
   },
-  "Customer": {
+
+  "customer": {
     "dataSource": "db",
-    "public": true,
-    "options": {
-      "emailVerificationRequired": true
-    }
+    "public": true
   }
 }

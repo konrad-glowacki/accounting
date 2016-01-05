@@ -1,5 +1,5 @@
 {
-  "name": "Accountant",
+  "name": "accountant",
   "base": "User",
   "idInjection": true,
   "options": {

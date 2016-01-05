@@ -1,37 +1,82 @@
 {
-  "name": "Customer",
+  "name": "customer",
   "base": "User",
-  "idInjection": true,
   "options": {
-    "validateUpsert": true
-  },
-  "properties": {
-    "first_name": {
-      "type": "string"
-    },
-    "last_name": {
-      "type": "string"
-    },
-    "tax_number": {
-      "type": "string"
-    },
-    "address": {
-      "type": "string"
-    },
-    "zip_code": {
-      "type": "string"
-    },
-    "city": {
-      "type": "string"
-    },
-    "phone": {
-      "type": "string"
-    },
-    "company_name": {
-      "type": "string"
+    "idInjection": false,
+    "validateUpsert": true,
+    "postgresql": {
+      "table": "customers"
     }
   },
+
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "postgresql": {
+        "columnName": "first_name",
+        "dataType": "character varying"
+      }
+    },
+
+    "lastName": {
+      "type": "string",
+      "postgresql": {
+        "columnName": "last_name",
+        "dataType": "character varying"
+      }
+    },
+
+    "taxNumber": {
+      "type": "string",
+      "postgresql": {
+        "columnName": "tax_number",
+        "dataType": "character varying"
+      }
+    },
+
+    "address": {
+      "type": "string",
+      "postgresql": {
+        "columnName": "address",
+        "dataType": "character varying"
+      }
+    },
+
+    "zipCode": {
+      "type": "string",
+      "postgresql": {
+        "columnName": "zip_code",
+        "dataType": "character varying"
+      }
+    },
+
+    "city": {
+      "type": "string",
+      "postgresql": {
+        "columnName": "city",
+        "dataType": "character varying"
+      }
+    },
+
+    "phone": {
+      "type": "string",
+      "postgresql": {
+        "columnName": "phone",
+        "dataType": "character varying"
+      }
+    },
+
+    "companyName": {
+      "type": "string",
+      "postgresql": {
+        "columnName": "company_name",
+        "dataType": "character varying"
+      }
+    }
+  },
+
   "validations": [],
+
   "relations": {
     "accountant": {
       "type": "belongsTo",
@@ -39,6 +84,7 @@
       "foreignKey": "accountantId"
     }
   },
+
   "acls": [],
   "methods": {}
 }
