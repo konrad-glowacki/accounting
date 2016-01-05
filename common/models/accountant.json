@@ -1,5 +1,5 @@
 {
-  "name": "accountant",
+  "name": "Accountant",
   "base": "User",
   "idInjection": true,
   "options": {
@@ -23,7 +23,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "customers": {
+      "type": "hasMany",
+      "model": "Customer",
+      "foreignKey": "accountantId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

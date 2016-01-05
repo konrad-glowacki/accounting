@@ -1,0 +1,44 @@
+{
+  "name": "Customer",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "tax_number": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "zip_code": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "company_name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "accountant": {
+      "type": "belongsTo",
+      "model": "Accountant",
+      "foreignKey": "accountantId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
