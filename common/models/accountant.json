@@ -23,6 +23,27 @@
       "postgresql": {
         "columnName": "last_name"
       }
+    },
+
+    "emailVerified": {
+      "type": "Boolean",
+      "postgresql": {
+        "columnName": "email_verified"
+      }
+    },
+
+    "verificationToken": {
+      "type": "String",
+      "postgresql": {
+        "columnName": "verification_token"
+      }
+    },
+
+    "lastUpdated": {
+      "type": "Date",
+      "postgresql": {
+        "columnName": "last_updated"
+      }
     }
   },
 

@@ -11,6 +11,13 @@
   },
 
   "properties": {
+    "accountantId": {
+      "type": "Number",
+      "postgresql": {
+        "columnName": "accountant_id"
+      }
+    },
+
     "firstName": {
       "type": "string",
       "postgresql": {
@@ -64,6 +71,27 @@
       "type": "string",
       "postgresql": {
         "columnName": "company_name"
+      }
+    },
+
+    "emailVerified": {
+      "type": "Boolean",
+      "postgresql": {
+        "columnName": "email_verified"
+      }
+    },
+
+    "verificationToken": {
+      "type": "String",
+      "postgresql": {
+        "columnName": "verification_token"
+      }
+    },
+
+    "lastUpdated": {
+      "type": "Date",
+      "postgresql": {
+        "columnName": "last_updated"
       }
     }
   },

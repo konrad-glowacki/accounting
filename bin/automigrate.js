@@ -6,7 +6,12 @@ var ds = app.datasources.db;
 ds.automigrate('customer', function(err) {
   if (err) throw err;
 
-  var customer = { email: 'konrad@webkrak.pl', password: 'konrad123' };
+  var customer = {
+    email: 'konrad@webkrak.pl',
+    password: 'konrad123',
+    created: new Date(),
+    lastUpdated: new Date()
+  };
 
   app.models.Customer.create(customer, function(err, model) {
     if (err) throw err;
