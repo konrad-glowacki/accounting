@@ -1,6 +1,7 @@
 {
   "name": "customer",
   "base": "User",
+
   "options": {
     "idInjection": false,
     "validateUpsert": true,
@@ -13,64 +14,56 @@
     "firstName": {
       "type": "string",
       "postgresql": {
-        "columnName": "first_name",
-        "dataType": "character varying"
+        "columnName": "first_name"
       }
     },
 
     "lastName": {
       "type": "string",
       "postgresql": {
-        "columnName": "last_name",
-        "dataType": "character varying"
+        "columnName": "last_name"
       }
     },
 
     "taxNumber": {
       "type": "string",
       "postgresql": {
-        "columnName": "tax_number",
-        "dataType": "character varying"
+        "columnName": "tax_number"
       }
     },
 
     "address": {
       "type": "string",
       "postgresql": {
-        "columnName": "address",
-        "dataType": "character varying"
+        "columnName": "address"
       }
     },
 
     "zipCode": {
       "type": "string",
       "postgresql": {
-        "columnName": "zip_code",
-        "dataType": "character varying"
+        "columnName": "zip_code"
       }
     },
 
     "city": {
       "type": "string",
       "postgresql": {
-        "columnName": "city",
-        "dataType": "character varying"
+        "columnName": "city"
       }
     },
 
     "phone": {
       "type": "string",
       "postgresql": {
-        "columnName": "phone",
-        "dataType": "character varying"
+        "columnName": "phone"
       }
     },
 
     "companyName": {
       "type": "string",
       "postgresql": {
-        "columnName": "company_name",
-        "dataType": "character varying"
+        "columnName": "company_name"
       }
     }
   },

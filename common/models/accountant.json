@@ -1,28 +1,33 @@
 {
   "name": "accountant",
   "base": "User",
-  "idInjection": true,
+
   "options": {
-    "validateUpsert": true
-  },
-  "properties": {
-    "email": {
-      "type": "string",
-      "required": true
-    },
-    "name": {
-      "type": "string",
-      "required": true
-    },
-    "surname": {
-      "type": "string",
-      "required": true
-    },
-    "address": {
-      "type": "string"
+    "idInjection": true,
+    "validateUpsert": true,
+    "postgresql": {
+      "table": "accountants"
     }
   },
+
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "postgresql": {
+        "columnName": "first_name"
+      }
+    },
+
+    "lastName": {
+      "type": "string",
+      "postgresql": {
+        "columnName": "last_name"
+      }
+    }
+  },
+
   "validations": [],
+
   "relations": {
     "customers": {
       "type": "hasMany",
@@ -30,6 +35,7 @@
       "foreignKey": "accountantId"
     }
   },
+
   "acls": [],
   "methods": {}
 }

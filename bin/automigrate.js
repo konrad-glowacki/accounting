@@ -14,7 +14,7 @@ ds.automigrate('customer', function(err) {
   });
 });
 
-ds.automigrate(['accountant', 'ACL'], function(err) {
+ds.automigrate(['accountant', 'ACL', 'AccessToken'], function(err) {
   if (err) throw err;
 });
 
