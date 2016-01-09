@@ -5,7 +5,7 @@
   },
   "models": {
     "ManagerHost": {
-      "1b60404c-cb6d-4023-9c0b-9effd63534ff": "{\"id\":\"1b60404c-cb6d-4023-9c0b-9effd63534ff\",\"host\":\"localhost\",\"port\":7000,\"actions\":[\"delete\",\"edit\"],\"protocol\":\"http\",\"created\":1452368879011,\"error\":{\"message\":\"connect ECONNREFUSED\"},\"errorType\":\"connection\",\"app\":null,\"processes\":null}"
+      "1b60404c-cb6d-4023-9c0b-9effd63534ff": "{\"id\":\"1b60404c-cb6d-4023-9c0b-9effd63534ff\",\"host\":\"localhost\",\"port\":3000,\"actions\":[\"delete\",\"edit\"],\"protocol\":\"http\",\"created\":1452368879011,\"error\":{\"message\":\"connect ECONNREFUSED\"},\"errorType\":\"connection\",\"app\":null,\"processes\":null,\"$$hashKey\":\"object:1173\",\"isHostProblem\":true}"
     },
     "LoadBalancer": {}
   }
