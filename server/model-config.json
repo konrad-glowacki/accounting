@@ -6,7 +6,6 @@
       "../common/models",
       "./models"
     ],
-
     "mixins": [
       "loopback/common/mixins",
       "loopback/server/mixins",
@@ -14,34 +13,38 @@
       "./mixins"
     ]
   },
-
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "postgres",
     "public": false
   },
-
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "postgres",
     "public": false
   },
-
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "postgres",
     "public": false
   },
-
   "Role": {
-    "dataSource": "db",
+    "dataSource": "postgres",
     "public": false
   },
-
-  "accountant": {
-    "dataSource": "db",
-    "public": true
+  "Accountant": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
-
-  "customer": {
-    "dataSource": "db",
-    "public": true
+  "Customer": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "AccountingRegister": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

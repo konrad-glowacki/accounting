@@ -1,7 +1,7 @@
 {
-  "name": "customer",
+  "name": "Customer",
   "base": "User",
-
+  "idInjection": true,
   "options": {
     "idInjection": false,
     "validateUpsert": true,
@@ -9,103 +9,52 @@
       "table": "customers"
     }
   },
-
   "properties": {
-    "accountantId": {
-      "type": "Number",
-      "postgresql": {
-        "columnName": "accountant_id"
-      }
-    },
-
-    "firstName": {
-      "type": "string",
-      "postgresql": {
-        "columnName": "first_name"
-      }
-    },
-
     "lastName": {
-      "type": "string",
-      "postgresql": {
-        "columnName": "last_name"
-      }
+      "type": "string"
     },
-
+    "firstName": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "accountant": {
+      "type": "Accountant",
+      "required": false
+    },
+    "propertyName55": {
+      "type": "string"
+    },
+    "zipCode": {
+      "type": "string"
+    },
     "taxNumber": {
       "type": "string",
-      "postgresql": {
-        "columnName": "tax_number"
-      }
+      "required": true,
+      "index": true
     },
-
-    "address": {
+    "vatTaxer": {
+      "type": "boolean",
+      "required": true
+    },
+    "settlementPeriod": {
       "type": "string",
-      "postgresql": {
-        "columnName": "address"
-      }
+      "required": true
     },
-
-    "zipCode": {
-      "type": "string",
-      "postgresql": {
-        "columnName": "zip_code"
-      }
+    "street": {
+      "type": "string"
     },
-
-    "city": {
-      "type": "string",
-      "postgresql": {
-        "columnName": "city"
-      }
-    },
-
-    "phone": {
-      "type": "string",
-      "postgresql": {
-        "columnName": "phone"
-      }
-    },
-
-    "companyName": {
-      "type": "string",
-      "postgresql": {
-        "columnName": "company_name"
-      }
-    },
-
-    "emailVerified": {
-      "type": "Boolean",
-      "postgresql": {
-        "columnName": "email_verified"
-      }
-    },
-
-    "verificationToken": {
-      "type": "String",
-      "postgresql": {
-        "columnName": "verification_token"
-      }
-    },
-
-    "lastUpdated": {
-      "type": "Date",
-      "postgresql": {
-        "columnName": "last_updated"
-      }
+    "hasEmployees": {
+      "type": "boolean",
+      "required": true
     }
   },
-
   "validations": [],
-
-  "relations": {
-    "accountant": {
-      "type": "belongsTo",
-      "model": "Accountant",
-      "foreignKey": "accountantId"
-    }
-  },
-
+  "relations": {},
   "acls": [],
   "methods": {}
 }

@@ -1,0 +1,58 @@
+{
+  "name": "AccountingRegister",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "periodDate": {
+      "type": "date",
+      "required": true,
+      "index": true
+    },
+    "pitAmount": {
+      "type": "number",
+      "required": true
+    },
+    "vatAmount": {
+      "type": "number",
+      "required": true
+    },
+    "customer": {
+      "type": "Customer",
+      "index": true
+    },
+    "zusSocialAmount": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "pitComment": {
+      "type": "string"
+    },
+    "vatComment": {
+      "type": "string"
+    },
+    "zusComment": {
+      "type": "string"
+    },
+    "zusLaborFundAmount": {
+      "type": "number",
+      "required": true
+    },
+    "zusHealthAmount": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,8 +1,8 @@
 {
-  "db": {
+  "postgres": {
+    "url": "postgres://postgres:@localhost:5432/accounting_dev",
     "name": "postgres",
     "connector": "postgresql",
-    "url": "postgres://postgres:@localhost:5432/accounting_dev",
     "debug": true
   }
 }

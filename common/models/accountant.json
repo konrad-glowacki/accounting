@@ -1,7 +1,7 @@
 {
-  "name": "accountant",
+  "name": "Accountant",
   "base": "User",
-
+  "idInjection": true,
   "options": {
     "idInjection": true,
     "validateUpsert": true,
@@ -9,54 +9,16 @@
       "table": "accountants"
     }
   },
-
   "properties": {
     "firstName": {
-      "type": "string",
-      "postgresql": {
-        "columnName": "first_name"
-      }
+      "type": "string"
     },
-
     "lastName": {
-      "type": "string",
-      "postgresql": {
-        "columnName": "last_name"
-      }
-    },
-
-    "emailVerified": {
-      "type": "Boolean",
-      "postgresql": {
-        "columnName": "email_verified"
-      }
-    },
-
-    "verificationToken": {
-      "type": "String",
-      "postgresql": {
-        "columnName": "verification_token"
-      }
-    },
-
-    "lastUpdated": {
-      "type": "Date",
-      "postgresql": {
-        "columnName": "last_updated"
-      }
+      "type": "string"
     }
   },
-
   "validations": [],
-
-  "relations": {
-    "customers": {
-      "type": "hasMany",
-      "model": "Customer",
-      "foreignKey": "accountantId"
-    }
-  },
-
+  "relations": {},
   "acls": [],
   "methods": {}
 }
